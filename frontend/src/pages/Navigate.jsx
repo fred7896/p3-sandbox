@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
+import PondsList from "../components/PondsList";
 import MyMap from "../components/MyMap";
 import Footer from "../components/Footer";
 
@@ -19,15 +20,7 @@ export default class Navigate extends React.Component {
           </div>
           <div className="ponds-container">
             <div className="ponds-list-container">
-            <h3>Plans d'eau</h3>
-            <ul>
-              <li>
-                armentieres
-              </li>
-              <li>
-                arras
-              </li>
-            </ul>
+            <PondsList />
             </div>
             <MyMap />
           </div>
