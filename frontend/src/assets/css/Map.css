@@ -1,0 +1,35 @@
+#mapid {
+  height: 73%;
+  width: 58.2%;
+  margin-top:2.4%;
+  /* border: 3px solid #707070;
+  border-radius: 4px; */
+}
+.popup-name {
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: left;
+}
+.popup-ul{
+    font-size: 21px;
+    list-style: none;
+    padding: 0;
+}
+.popup-distance{
+    color: #959DAD;
+    font-size: 21px;
+    bottom: 40px;
+}
+.popup-button {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 15px;
+  width: 187px;
+  height: 43px;
+  border-radius: 100px;
+  border: none;
+  background-color: #71e203;
+  box-shadow: 0px 10px 10px rgba(113, 226, 3, 0.2);
+  cursor: pointer;
+}

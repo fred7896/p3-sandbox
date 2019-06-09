@@ -1,0 +1,106 @@
+.Navigate-Navbar {
+  width: 100%;
+  height: 8.4%;
+  background-color: #468B02;
+  color: beige;
+  font-weight: bold;
+  text-align: center;
+}
+.Navigate-container-global {
+  width: 100vw;
+  height: 169vh;
+}
+
+.Navigate-container-main {
+  width: 100%;
+  height: 83.2%;
+}
+
+.container-inputs {
+  width: 100%;
+  height: 20.3%;
+  display: flex;
+}
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  height: 100%;
+  margin-left: 5%;
+  font-family: Raleway;
+  font-weight: 700; 
+}
+
+.search-container h2 {
+  margin-top:24%;
+  font-size: 1.6em;
+}
+
+
+
+#search-text-input{
+    width: 96.5%;
+    height: 56px;
+    border:thin solid rgba(51, 51, 51, 0.5);
+    border-radius: 3px;
+    height:18px;
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+}
+
+.filters-container {
+  width: 63%;
+  height: 100%;
+  margin-right: 5%;
+
+}
+
+/* resultats */
+
+.res {
+  font-size: 1em;
+  list-style-type: none;
+}
+
+.search input:focus + .results { display: block }
+
+.search .res {
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border:thin solid rgba(51, 51, 51, 0.5);
+    border-radius: 3px;
+    font-weight: 500;
+    display: float;
+    position: relative;
+    padding: 6px 10px 6px 10px;
+    background-color: white;
+}
+
+.search .res :hover {
+    text-decoration: none;
+    color: white;
+    background-color: #71E203;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ponds-container {
+  width: 100%;
+  height : 77.83%;
+  display: flex;
+}
+
+.ponds-list-container {
+  width: 32%;
+  height : 85.2%;
+  margin-left: 5%;
+}
+
+.ponds-list-container h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
