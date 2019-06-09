@@ -6,8 +6,7 @@ class MyMap extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        zoomLevel: 16,
-        center: [50.633333, 3.066667]
+        zoomLevel: 16
       };
   }
 
@@ -15,7 +14,7 @@ class MyMap extends React.Component {
     const center = this.props.center;
       return (
           <React.Fragment>
-  <Map center={center} zoom={13}>
+  <Map center={center} zoom={this.state.zoomLevel}>
     <TileLayer
       url="http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png"
       attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
