@@ -14,13 +14,13 @@ app.use(
   })
 );
 
-// j'implémente la partie API
+// 1- GET - j'implémente la partie API
 app.get("/", (req, res) => {
   let msg = "Welcome on Dyna Wing Sail Backend";
   res.status(200).send(msg);
 });
 
-// 1- GET - Récupération de l'ensemble des données de la table waterponds
+// 2- GET - Récupération de l'ensemble des données de la table waterponds
 app.get("/api/water-ponds", (req, res) => {
   connection.query("SELECT * from water_pond", (err, rows) => {
     if (err) {

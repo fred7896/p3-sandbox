@@ -1,6 +1,14 @@
 import React from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 import { connect } from "react-redux";
+
+const localizationIcon = L.icon({
+  iconUrl: require("../assets/images/icone-localisation.png"),
+  iconSize: [40, 40],
+  iconAnchor: [25, 5],
+  popupAnchor: [-3, -10]
+});
 
 class MyMap extends React.Component {
   constructor(props) {
@@ -23,7 +31,7 @@ class MyMap extends React.Component {
           {this.props.ponds.map((pond, idx) => {
             return (
               <React.Fragment key={idx}>
-                <Marker position={[pond.latitude, pond.longitude]}>
+                <Marker position={[pond.latitude, pond.longitude]} icon={localizationIcon}>
                   <Popup>{pond.name}</Popup>
                 </Marker>
               </React.Fragment>
