@@ -1,14 +1,16 @@
 import React from "react";
 import axios from "axios";
+import { connect } from "react-redux";
 import SearchBar from "../components/SearchBar";
 import PondsList from "../components/PondsList";
 import MyMap from "../components/MyMap";
 import Footer from "../components/Footer";
 
+
 // CSS
 import "../assets/css/Navigate.css";
 
-export default class Navigate extends React.Component {
+class Navigate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +26,7 @@ export default class Navigate extends React.Component {
   }
 
   render() {
-    console.log(this.state.ponds);
+    const {center} = this.props;
     return (
       <div className="Navigate-container-global">
         <div className="Navigate-Navbar">NAVBAR</div>
@@ -35,7 +37,7 @@ export default class Navigate extends React.Component {
           </div>
           <div className="ponds-container">
             <div className="ponds-list-container">
-              <PondsList ponds={this.state.ponds} />
+              <PondsList ponds={this.state.ponds} center={center} />
             </div>
             <MyMap ponds={this.state.ponds} />
           </div>
@@ -45,3 +47,12 @@ export default class Navigate extends React.Component {
     );
   }
 }
+
+
+const mapStateToProps = state => ({
+  center: state
+});
+
+const NavigateContainer = connect(mapStateToProps)(Navigate);
+
+export default NavigateContainer;
