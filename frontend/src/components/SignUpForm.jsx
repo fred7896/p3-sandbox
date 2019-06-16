@@ -22,7 +22,7 @@ class SignUpForm extends React.Component {
                         </div>
                         <button type="submit" className="signup-btn">M'INSCRIRE</button>
                         <div className="cgu">
-                            En vous inscrivant, vous acceptez les <a href="#">Conditions générales d'utilisation</a>
+                            {/* En vous inscrivant, vous acceptez les <a href="#">Conditions générales d'utilisation</a> */}
                         </div>
                     </form>
                 </div>

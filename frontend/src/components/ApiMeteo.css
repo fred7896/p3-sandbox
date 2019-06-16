@@ -1,0 +1,54 @@
+.meteo-container-global {
+    width: 521px;
+    height: 264px;
+}
+
+.meteo-title {
+    font-size: 29px;
+    text-align: center;
+    margin: 0;
+
+}
+
+.day-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 82px; 
+}
+
+ul#horizontal-list {
+    margin: 0;
+	list-style: none;
+    display: flex;
+    justify-content:space-around;
+    }
+    
+.day-p {
+    color : #d8d8d8;
+    text-align: center;
+    font-weight: 700;
+}
+
+.temp-p {
+   color: #71E203;;
+}
+
+.temp-p-min {
+    color: #d8d8d8;
+}
+
+.day-container i {
+    color : #71E203;
+
+}
+.desc-p {
+    color: #a6a6a6;
+    text-align: center;
+    font-size: .8em;
+}
+
+.custom-icon {
+    text-align: center;
+}
+
+
